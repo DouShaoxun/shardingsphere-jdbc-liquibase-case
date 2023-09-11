@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: jdbc-db-mybatis
+  profiles:
+    include:
+    # application-shardingsphere-jdbc.yml todo将shardingsphere数据源配置和liquibase配置整合到一块
+    - shardingsphere-jdbc
+    # application-liquibase.yml
+    - liquibase

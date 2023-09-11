@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.11.xsd" objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1" author="msjc">
+        <!--        todo 根据模板生成逻辑表 -->
+        <createTable tableName="T_OPERATION_RECORD_2023_01">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_02">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_03">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_04">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_05">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_06">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_07">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_08">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_09">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_10">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_11">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2023_12">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_01">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_02">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_03">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_04">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_05">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_06">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_07">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_08">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_09">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_10">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_11">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+        <createTable tableName="T_OPERATION_RECORD_2024_12">
+            <column name="ID" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="T_OPERATION_RECORD_ID_ENTITY"/>
+            </column>
+            <column name="OPERATION" type="INT"/>
+            <column name="OPERATION_TIME" type="DATETIME"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

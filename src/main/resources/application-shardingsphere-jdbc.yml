@@ -1,0 +1,37 @@
+spring:
+  shardingsphere:
+    datasource:
+      msjc:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/sjlc-dev?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+        password: root
+        type: com.zaxxer.hikari.HikariDataSource
+        username: root
+      names: msjc
+    enabled: true
+    props:
+      sql-show: true
+    rules:
+      sharding:
+        tables:
+          # 需要分表的逻辑表名, 如果需要配置多个数据表，按照这个规则配置就可以
+          # 逻辑表名的坑 配置里是小写 javax.persistence.Table.name里是大写 会导致找不到数据库分片 建议配置和javax.persistence.Table.name里保持一致
+          t_operation_record:
+            # 表的真实表列表,需要注意这里的表都应该存在
+            # 项目开发中分片节点 数据库表可以用计划任务 每月最后一天创建下个月的表
+            # 或者预估项目存活时间 把表创建到2100年 会多出很多空表 不知道对数据库有什么影响。
+            # 无论是计划任务创建还是提前创建 涉及到表的改动 都要执行改动
+            actual-data-nodes: msjc.t_operation_record_202$->{3..4}_$->{['01','02','03','04','05','06','07','08','09','10','11','12']}
+            # 分片策略配置
+            table-strategy:
+              standard:
+                # 分片算法是 his_month_sharding, 这个名称是在下面配置的
+                sharding-algorithm-name: his_month_sharding
+                # 分片列是 acquisition_time， 需要注意的是，分表算法的数据类型一定要和这个分片的列数据类型一致
+                sharding-column: operation_time
+        # 配置分片算法
+        sharding-algorithms:
+          # 分片算法名称
+          his_month_sharding:
+            # 分片算法类型  type就是HisDataMonthShardingAlgorithm分片算法实现类中 getType() 的返回值，SPI适用于这种方式
+            type: HIS_DATA_SPI_BASED
